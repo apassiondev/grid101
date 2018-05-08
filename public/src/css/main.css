@@ -1,5 +1,5 @@
 body{
-    font-family: "Arial Black";
+    font-family: "Arial";
     background-color: #000;
     padding-top: 20px;
 }
@@ -15,7 +15,16 @@ body{
     /*grid-template-columns: 1fr 1fr 1fr; !* 1fr is one piece of however many pieces we're splitting this into *!*/
     /*grid-template-columns: 300px 1fr 3fr 20%; !* fr is in combination with other units *!*/
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto auto;
+    /*grid-template-rows: auto auto auto;*/
+    /*grid-template-rows: repeat(3, 100px);*/
+    grid-template-rows: 80px 180px 80px;
+
+    grid-template-areas:
+            "header header header"
+            "main main sidebar"
+            "footer footer footer"
+;
+
     grid-gap: 20px;
 }
 .grid-1 div{
@@ -25,16 +34,26 @@ body{
 }
 /* Items */
 .item-1 {
-    background: #b03532;
+    background: #b0a245;
+    /*grid-column: 1 / 3;*/
+    /*grid-column: 1 / span 2;*/
+    /*grid-row: 1 / 3;*/
+    /*grid-row: 1 / span 2;*/
+    grid-area: header;
 }
 .item-2 {
     background: #33a8a5;
+    grid-area: main;
 }
 .item-3 {
     background: #30997a;
+    grid-area: sidebar;
 }
 .item-4 {
     background: #6a478f;
+    /*grid-column: 3;*/
+    /*grid-row: 2 / span 2;*/
+    grid-area: footer;
 }
 .item-5 {
     background: #da6f2b;
