@@ -7,30 +7,52 @@ body{
 .grid-1{
     display: grid;
     width: 100%;
-    max-width: 960px;
     margin: 0 auto;
-    /*grid-template-columns: 150px 150px 150px;*/
-    /*grid-template-columns: 33.33% 33.33% 33.33%; !* other units: ems - rems - vh - vmin *!*/
-    /*grid-template-columns: repeat(3, 33.33%); !* repeat(no of columns, width of each) *!*/
-    /*grid-template-columns: 1fr 1fr 1fr; !* 1fr is one piece of however many pieces we're splitting this into *!*/
-    /*grid-template-columns: 300px 1fr 3fr 20%; !* fr is in combination with other units *!*/
-    grid-template-columns: repeat(3, 1fr);
-    /*grid-template-rows: auto auto auto;*/
-    /*grid-template-rows: repeat(3, 100px);*/
-    grid-template-rows: 80px 180px 80px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto auto 80px;
+    grid-gap: 10px;
 
     grid-template-areas:
-            "header header header"
-            "main main sidebar"
-            "footer footer footer"
-;
-
-    grid-gap: 20px;
+            "header"
+            "main"
+            "sidebar"
+            "footer";
 }
 .grid-1 div{
     color: #ffffff;
     font-size: 1.2rem;
     padding: 20px;
+}
+
+@media only screen and (min-width: 500px){
+    .grid-1{
+        display: grid;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        /*grid-template-columns: 150px 150px 150px;*/
+        /*grid-template-columns: 33.33% 33.33% 33.33%; !* other units: ems - rems - vh - vmin *!*/
+        /*grid-template-columns: repeat(3, 33.33%); !* repeat(no of columns, width of each) *!*/
+        /*grid-template-columns: 1fr 1fr 1fr; !* 1fr is one piece of however many pieces we're splitting this into *!*/
+        /*grid-template-columns: 300px 1fr 3fr 20%; !* fr is in combination with other units *!*/
+        grid-template-columns: repeat(3, 1fr);
+        /*grid-template-rows: auto auto auto;*/
+        /*grid-template-rows: repeat(3, 100px);*/
+        grid-template-rows: 80px auto 80px;
+
+        grid-template-areas:
+                "header header header"
+                "main main sidebar"
+                "footer footer footer"
+    ;
+
+        grid-gap: 20px;
+    }
+    .grid-1 div{
+        font-size: 20px;
+        padding: 20px;
+    }
 }
 /* Items */
 .item-1 {
@@ -41,18 +63,39 @@ body{
     /*grid-row: 1 / span 2;*/
     grid-area: header;
 }
-.item-2 {
+
+/* Nested grid of item-2 */
+.item-2{
     background: #33a8a5;
     grid-area: main;
 
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    word-wrap: break-word;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+
     grid-template-areas:
-            "heading heading heading"
-            "text text image";
-    grid-gap: 15px;
+            "heading"
+            "article"
+            "photo";
+
+}
+
+@media only screen and (min-width: 600px){
+    .item-2 {
+        grid-area: main;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:
+                "heading heading"
+                "article photo";
+        grid-gap: 10px;
+    }
 }
 .item-5{
     background-color: #da6f2b;
@@ -60,11 +103,11 @@ body{
 }
 .item-6{
     background-color: #e03f3f;
-    grid-area: text;
+    grid-area: article;
 }
 .item-7{
     background-color: #e059d6;
-    grid-area: image;
+    grid-area: photo;
 }
 .item-3 {
     background: #30997a;
