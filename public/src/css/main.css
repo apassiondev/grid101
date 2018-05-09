@@ -44,6 +44,27 @@ body{
 .item-2 {
     background: #33a8a5;
     grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+            "heading heading heading"
+            "text text image";
+    grid-gap: 15px;
+}
+.item-5{
+    background-color: #da6f2b;
+    grid-area: heading;
+}
+.item-6{
+    background-color: #e03f3f;
+    grid-area: text;
+}
+.item-7{
+    background-color: #e059d6;
+    grid-area: image;
 }
 .item-3 {
     background: #30997a;
