@@ -134,3 +134,20 @@ body{
 .item-9 {
     background: #4464a1;
 }
+
+/* Grid-3 */
+.grid-3{
+    margin-top: 20px;
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    grid-gap: 20px;
+}
+.grid-3 div{
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+}
+.grid-3 .item-10{
+    background-color: blue;
+}
