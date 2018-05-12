@@ -33,7 +33,7 @@
         <div class="item-10">18</div>
     </section>
 
-    <p class="section-separator">Grid Layout #3</p>
+    <p class="section-separator">Grid Layout #4</p>
     <ul class="reference-urls" id="urls-4"></ul>
     <section class="grid-4">
         <div class="grid-4-item item-11">11</div>
@@ -56,9 +56,42 @@
         <div class="grid-4-item item-28">28</div>
     </section>
 
+    <p class="section-separator">Grid layout #5</p>
+    <ul class="reference-urls" id="urls-5"></ul>
+    <section class="grid-5">
+        <div class="grid-5-item">1</div>
+        <div class="grid-5-item">2</div>
+        <div class="grid-5-item special-item">3</div>
+        <div class="grid-5-item">4</div>
+        <div class="grid-5-item">5</div>
+        <div class="grid-5-item">6</div>
+        <div class="grid-5-item">7</div>
+        <div class="grid-5-item">8</div>
+        <div class="grid-5-item">9</div>
+    </section>
+
     <script type="text/javascript" src="src/js/main.js"></script>
     <script type="text/javascript">
-        window.onload = create_links("urls-4");
+        window.onload = create_links({
+            "elementId": "urls-4",
+            "items": [
+                {"text": "Understand the CSS Auto-Placement Algorithm from Envato Tuts+",
+            "url": "https://webdesign.tutsplus.com/tutorials/understanding-the-css-grid-auto-placement-algorithm--cms-27563"
+        },
+        {
+            "text": "Auto-Placement in CSS Grid Layout - MDN",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout"
+        }
+            ]
+        }), create_links({
+            "elementId": "urls-5",
+            "items": [
+                {
+                    "text": "Name your css Grid Lines by Envato Tuts+",
+                    "url": "https://webdesign.tutsplus.com/tutorials/quick-tip-name-your-css-grid-lines-just-in-case--cms-27844"
+                }
+            ]
+        });
     </script>
 </body>
 </html>
