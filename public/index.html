@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/css/main.css" />
 </head>
 <body>
-
+    <h1>GRID LAYOUT 101</h1>
     <p class="section-separator">Grid Layout #1</p>
     <section class="grid-1">
         <div class="item-1">Header</div>
@@ -70,28 +70,26 @@
         <div class="grid-5-item">9</div>
     </section>
 
+    <p class="section-separator">More Useful Resources</p>
+    <ul class="reference-urls" id="5-css-resources"></ul>
+
+    <footer>
+        <p>&copysr; 2018 - <a href="https://github.com/apassiondev/grid101.git" target="_blank"> Commits</a> on github</p>
+    </footer>
     <script type="text/javascript" src="src/js/main.js"></script>
     <script type="text/javascript">
-        window.onload = create_links({
-            "elementId": "urls-4",
-            "items": [
-                {"text": "Understand the CSS Auto-Placement Algorithm from Envato Tuts+",
-            "url": "https://webdesign.tutsplus.com/tutorials/understanding-the-css-grid-auto-placement-algorithm--cms-27563"
-        },
-        {
-            "text": "Auto-Placement in CSS Grid Layout - MDN",
-            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout"
-        }
-            ]
-        }), create_links({
-            "elementId": "urls-5",
-            "items": [
-                {
-                    "text": "Name your css Grid Lines by Envato Tuts+",
-                    "url": "https://webdesign.tutsplus.com/tutorials/quick-tip-name-your-css-grid-lines-just-in-case--cms-27844"
+        window.onload = function(){
+            var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("application/json");
+            xobj.open('GET', 'data/references.json');
+            xobj.onreadystatechange = function(){
+                if(xobj.readyState == 4 && xobj.status == "200"){
+                    var data = JSON.parse(xobj.response);
+                    create_links(data);
                 }
-            ]
-        });
+            }
+            xobj.send(null);
+        };
     </script>
 </body>
 </html>

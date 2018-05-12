@@ -2,15 +2,34 @@ body{
     font-family: "Arial";
     background-color: #000;
     padding-top: 20px;
+    font-size: 1em;
+}
+h1{
+    margin:0 auto;
+    text-align: center;
+    color: yellow;
+}
+a{
+    color: #b97e7f;
+    text-decoration: none;
+    margin: 0 auto;
+}
+footer{
+    padding: 10px 20px;
+    border-top: 1px solid #d3d3d3;
+    color: #d5d5d5;
 }
 section{
     padding-bottom: 40px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 .section-separator{
     margin: 40px 0 10px 0;
     font-size: 14px;
     color: #fff;
     text-transform: uppercase;
+    text-indent: 35px;
 }
 ul.reference-urls{
     width: 100%;
@@ -18,6 +37,8 @@ ul.reference-urls{
     background-color: #fff;
     padding: 10px;
     margin: 0 auto 20px auto;
+    display: block;
+    min-height: 30px;
 }
 ul.reference-urls li{
     margin: 5px 40px;
@@ -27,7 +48,6 @@ ul.reference-urls li{
 li a{
     text-decoration: none;
     font-style: italic;
-    color: #b97e7f;
 }
 a.more{
     margin-left: 15px;
@@ -35,7 +55,6 @@ a.more{
 /* Grid Rules */
 .grid-1{
     display: grid;
-    width: 100%;
     margin: 0 auto;
 
     grid-template-columns: 1fr;
@@ -57,8 +76,6 @@ a.more{
 @media only screen and (min-width: 500px){
     .grid-1{
         display: grid;
-        width: 100%;
-        max-width: 960px;
         margin: 0 auto;
         /*grid-template-columns: 150px 150px 150px;*/
         /*grid-template-columns: 33.33% 33.33% 33.33%; !* other units: ems - rems - vh - vmin *!*/
@@ -184,7 +201,6 @@ a.more{
 .grid-4{
     display: grid;
 
-    width: 100%;
     max-width: 750px;
     margin: 0 auto;
 

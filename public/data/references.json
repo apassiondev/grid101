@@ -1,0 +1,55 @@
+{
+  "items": [
+    {
+      "id": "urls-4",
+      "items": [
+        {"text": "Understand the CSS Auto-Placement Algorithm from Envato Tuts+",
+          "url": "https://webdesign.tutsplus.com/tutorials/understanding-the-css-grid-auto-placement-algorithm--cms-27563"
+        },
+        {
+          "text": "Auto-Placement in CSS Grid Layout - MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout"
+        }
+      ]
+    },
+    {
+      "id": "urls-5",
+      "items": [
+        {
+          "text": "Name your css Grid Lines by Envato Tuts+",
+          "url": "https://webdesign.tutsplus.com/tutorials/quick-tip-name-your-css-grid-lines-just-in-case--cms-27844"
+        }
+      ]
+    },
+    {
+      "id": "5-css-resources",
+      "items": [
+        {
+          "text": "Mozilla: Introduction to CSS Grid Layout",
+          "url": "https://mozilladevelopers.github.io/playground/css-grid"
+        },
+        {
+          "text": "Learncssgrid.com",
+          "url": "http://learncssgrid.com/"
+        },
+        {
+          "text": "CSS Tricks: A Complete Guide to Grid",
+          "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+        },
+        {
+          "text": "Grid by Example",
+          "url": "https://gridbyexample.com/"
+        },
+        {
+          "text": "3 CSS Grid Projects for Web Designers",
+          "url": "https://webdesign.tutsplus.com/courses/3-css-grid-projects-for-web-designers"
+        },
+        {
+          "text": "Bringing CSS Grid Layout and Flexbox Together",
+          "url": "https://webdesign.tutsplus.com/courses/bringing-css-grid-layout-and-flexbox-together"
+        }
+      ]
+    }
+  ]
+
+}
