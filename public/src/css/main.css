@@ -38,7 +38,8 @@ ul.reference-urls{
     padding: 10px;
     margin: 0 auto 20px auto;
     display: block;
-    min-height: 30px;
+    min-height: 100px;
+    opacity: 1;
 }
 ul.reference-urls li{
     margin: 5px 40px;

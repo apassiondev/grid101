@@ -4,6 +4,7 @@ function create_links(aData){
     for(var i = 0; i < groupCount; i++){
         var elementUl = document.getElementById(aGroups[i].id);
         var items = aGroups[i].items;
+        console.log(typeof items); // object expected
         var itemCount = items.length;
         for(var j = 0; j < itemCount; j++){
             // Create new elements li tag
@@ -22,5 +23,19 @@ function create_links(aData){
             newA.appendChild(newReadMore);
             newLi.appendChild(newA);
         }
+        if(typeof aGroups[i].easeIn != null && aGroups[i].easeIn == "1"){
+            easeIn(aGroups[i].id);
+        }
     }
+}
+
+function easeIn(elementId){
+    var iOpacity = 0;
+    var objDOM = document.getElementById(elementId);
+    setInterval(function(){
+        if(iOpacity < 1){
+            iOpacity = iOpacity + 0.05;
+            objDOM.style.opacity = iOpacity;
+        }
+    }, 100);
 }

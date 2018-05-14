@@ -22,6 +22,7 @@
       ]
     },
     {
+      "easeIn": "1",
       "id": "5-css-resources",
       "items": [
         {

@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "easeIn": "1",
+      "id": "url-items",
+      "items": [
+        {"text": "Understand CSS Grid Layout | Envato Tuts+",
+          "url": "https://webdesign.tutsplus.com/series/understanding-css-grid-layout--cms-1079"
+        },
+        {
+          "text": "Should I Use Grid or Flexbox | Rachel Andrew",
+          "url": "https://rachelandrew.co.uk/archives/2016/03/30/should-i-use-grid-or-flexbox/"
+        },
+        {
+          "text": "Designing Card-based User Interface | Smashing Magazine",
+          "url": "https://www.smashingmagazine.com/2016/10/designing-card-based-user-interfaces/"
+        },
+        {
+          "text": "bbc.co.uk beta home page",
+          "url": "https://www.bbc.co.uk/home/five/beta"
+        },
+        {
+          "text": "Quick tip: Add @supports CSS File to your CodePen demos",
+          "url": "https://webdesign.tutsplus.com/tutorials/quick-tip-add-a-supports-css-file-to-your-codepen-demos--cms-27378"
+        }
+      ]
+    }
+  ]
+
+}

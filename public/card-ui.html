@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid & Flexbox: The Card UI</title>
+    <link rel="icon" href="favicon.ico?v=10" type="image/icon"/>
+    <link rel="stylesheet" href="src/css/card-ui.css">
+    <script type="text/javascript" src="src/js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="band">
+        <div class="item-1">
+            <a href="http://www.atpworldtour.com/en/news/djokovic-muller-rome-2018-monday" class="card">
+                <div class="thumb"
+                     style="background-image: url(http://www.atpworldtour.com/-/media/images/news/2018/05/14/14/57/djokovic-rome-2018-backhand.jpg);"></div>
+                <article>
+                    <h1>Djokovic Dominates In Rome Opener</h1>
+                    <span>Daily Express</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-2">
+            <a href="http://www.atpworldtour.com/en/news/gimcheon-challenger-2018-nishioka"
+               class="card">
+                <div class="thumb"
+                     style="background-image: url(http://www.atpworldtour.com/-/media/images/news/2018/05/14/02/08/gimcheon-challenger-2018-nishioka.jpg?h=344&hash=95EF1477EA909DD0B40AE7568BAE38061D8FD5E6);"></div>
+                <article>
+                    <h1>Challenger Q&A: Nishikori Notches First Title In Comeback</h1>
+                    <span>Josh Meiseles</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-3">
+            <a href="http://www.atpworldtour.com/en/video/nishikori-confident-on-rome-return"
+               class="card">
+                <div class="thumb"
+                     style="background-image: url(https://video.atpworldtour.com/V4OGJiZjE6GUCDypBnpC6CznTEL20UbI/Hp8X82jl9f0Wh6Tn4xMDoxOjA4MTsiGN);"></div>
+                <article>
+                    <h1>Nishikori Confident On Rome Return</h1>
+                    <p>Three weeks after reaching the Monte-Carlo final, Kei Nishikori is feeling confident on his return to the Foro Italico, having reached the semi-finals at the Internazionali BNL d'Italia in 2016.</p>
+                    <span>Video Interview</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-4">
+            <a href="http://www.atpworldtour.com/en/news/rome-2018-preview-infographic"
+               class="card">
+                <div class="thumb"
+                     style="background-image: url(http://www.atpworldtour.com/-/media/images/news/2018/05/11/23/26/rome-2018-preview-infographic-tt.jpg?h=344&hash=6E7803F25131C2E3A9144A4E144C8D2A6B0427CD);"></div>
+                <article>
+                    <h1>Facts & Figures: 2018 International BNL d'Italia</h1>
+                    <p>What you need to know about the #ATPMasters1000 in Rome.</p>
+                    <span>ATP Staff</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-5">
+            <a href="http://www.atpworldtour.com/en/news/madrid-2018-final-zverev-reaction" class="card">
+                <div class="thumb"
+                     style="background-image: url(https://video.atpworldtour.com/5rYXFiZjE6lXaLx-MVmeBMeXZLeX0tkG/hvZvpR4FDrYPJ5sX4xMDoxOjBzMTt2bJ);"></div>
+                <article>
+                    <h1>Zverev Targets Rome Title Defence After Madrid Triumph</h1>
+                    <p>Alexander Zverev has his eyes on more Masters 1000 glory</p>
+                </article>
+            </a>
+        </div>
+        <div class="item-6">
+            <a href="http://www.atpworldtour.com/en/news/djokovic-rome-2018-monday-preview"
+               class="card">
+                <div class="thumb"
+                     style="background-image: url(http://www.atpworldtour.com/en/news/-/media/images/news/2018/05/13/22/42/djokovic-rome-2018-monday-preview.jpg);"></div>
+                <article>
+                    <h1>Djokovic Continues Comeback, Leads Monday Slate</h1>
+                    <p>Four-time Rome champions will look to get off to a good start at the event Monday against Alexandr Dolgopolov.
+                    </p>
+                    <span>Marie Gardiner</span>
+                </article>
+            </a>
+        </div>
+        <div class="item-7">
+            <a href="http://www.atpworldtour.com/en/news/madrid-2018-doubles-sunday"
+               class="card">
+                <div class="thumb"
+                     style="background-image: url(http://www.atpworldtour.com/-/media/images/news/2018/05/13/15/25/peya-mektic-madrid-2018-trophy.jpg?h=238&w=420&hash=0FB4F916DF928205BF6C4AB1ADB0835F1095D864);"></div>
+                <article>
+                    <h1>Mektic/Peya Lift First Masters 1000 Team Title</h1>
+                    <p>Watch as Nikola Mektic and Alexander Peya secure their first team ATP World Tour Masters 1000 trophy at the Mutua Madrid Open. Photo credit: Denis Doyle/Getty Images. Watch live tennis at tennistv.com.</p>
+                    <span>ATP Staff</span>
+                </article>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h3>Further Reading</h3>
+    <ul class="references-url" id="url-items"></ul>
+</div>
+<footer>
+    <p>&copysr; 2018 - <a href="https://github.com/apassiondev/grid101.git" target="_blank"> Commits</a> on github</p>
+</footer>
+<script type="text/javascript">
+    window.onload = function(){
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType('application/json');
+        xobj.open('GET', 'data/references-card-ui.json');
+        xobj.onreadystatechange = function(){
+            if(xobj.readyState == 4 && xobj.status == "200"){
+                var data = JSON.parse(xobj.response);
+                create_links(data);
+            }
+        }
+        xobj.send(null);
+    };
+</script>
+</body>
+</html>
