@@ -1,0 +1,27 @@
+{
+  "items": [
+    {
+      "easeIn": "1",
+      "id": "reference-urls",
+      "items": [
+        {
+          "text": "How to Build an Off-Canvas Navigation With CSS Grid",
+          "url": "https://webdesign.tutsplus.com/tutorials/how-to-build-an-off-canvas-navigation-with-css-grid--cms-28191"
+        },
+        {
+          "text": "Examining Responsive Navigation: Off Canvas Pattern | Steven Bradley",
+          "url": "https://webdesign.tutsplus.com/articles/examining-responsive-navigation-off-canvas-patterns--webdesign-11023"
+        },
+        {
+          "text": "Subscribe to csslayout.news",
+          "url": "http://csslayout.news/"
+        },
+        {
+          "text": "High Performance Animations | Paul Lewis & Paul Irish",
+          "url": "https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/"
+        }
+      ]
+    }
+  ]
+
+}
