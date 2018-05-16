@@ -76,20 +76,9 @@
     <footer>
         <p>&copysr; 2018 - <a href="https://github.com/apassiondev/grid101.git" target="_blank"> Commits</a> on github</p>
     </footer>
-    <script type="text/javascript" src="src/js/main.js"></script>
+    <script type="text/javascript" src="src/js/add_references.js"></script>
     <script type="text/javascript">
-        window.onload = function(){
-            var xobj = new XMLHttpRequest();
-            xobj.overrideMimeType("application/json");
-            xobj.open('GET', 'data/references.json');
-            xobj.onreadystatechange = function(){
-                if(xobj.readyState == 4 && xobj.status == "200"){
-                    var data = JSON.parse(xobj.response);
-                    create_links(data);
-                }
-            }
-            xobj.send(null);
-        };
+        window.onload = loadReferences('data/references/lessons-101.json');
     </script>
 </body>
 </html>

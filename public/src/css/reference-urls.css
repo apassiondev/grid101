@@ -1,0 +1,19 @@
+ul.reference-urls{
+    margin: 0;
+    padding: 10px 0;
+    min-height: 100px;
+    list-style-type: circle;
+    opacity: 0;
+}
+ul.reference-urls li{
+    margin: 5px 0;
+    display: block;
+}
+ul.reference-urls li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #e03f3f;
+}
+ul.reference-urls li a:hover{
+    cursor: pointer;
+}

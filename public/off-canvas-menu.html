@@ -45,22 +45,11 @@
 
 <div class="container" id="further-reading">
     <h2>Further Reading</h2>
-    <ul id="reference-urls"></ul>
+    <ul class="reference-urls" id="reference-urls"></ul>
 </div>
 </body>
-<script type="text/javascript" src="src/js/main.js"></script>
+<script type="text/javascript" src="src/js/add_references.js"></script>
 <script type="text/javascript">
-    window.onload = function(){
-        var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType('application/json');
-        xobj.open('GET', 'data/references-off-canvas-menu.json');
-        xobj.onreadystatechange = function(){
-            if(xobj.readyState == 4 && xobj.status == "200"){
-                var response = JSON.parse(xobj.response);
-                create_links(response);
-            }
-        }
-        xobj.send(null);
-    };
+    window.onload = loadReferences('/data/references/off-canvas-menu.json');
 </script>
 </html>

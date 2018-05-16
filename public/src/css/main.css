@@ -31,6 +31,7 @@ section{
     text-transform: uppercase;
     text-indent: 35px;
 }
+@import "reference-urls.css";
 ul.reference-urls{
     width: 100%;
     max-width: 90%;

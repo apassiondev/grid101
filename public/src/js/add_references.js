@@ -1,3 +1,16 @@
+function loadReferences(dataURI){
+    var xob = new XMLHttpRequest();
+    xob.overrideMimeType('application/json');
+    xob.open('GET', dataURI);
+    xob.onreadystatechange = function(){
+        if(xob.readyState == 4 && xob.status == "200"){
+            var response = JSON.parse(xob.response);
+            create_links(response);
+        }
+    };
+    xob.send(null);
+}
+
 function create_links(aData){
     var aGroups = aData.items;
     var groupCount = aGroups.length;
