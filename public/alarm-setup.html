@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Simple Grid Layout for Alarm Setup</title>
+    <link rel="stylesheet" href="src/css/alarm-setup.css?v=10" />
+</head>
+<body>
+<div class="container">
+    <nav>
+
+    </nav>
+    <section>
+        <div class="alarm-container">
+            <div class="alarm-item">
+                <div class="time">05:00</div>
+                <div class="meridiem">AM</div>
+                <div class="toggle">
+                    <label for="switch" class="switch">
+                        <input type="checkbox" id="switch">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="alarm-settings">
+                <div class="repeat">Repeat</div>
+                <div class="days">
+                    <span><label>S</label></span>
+                    <span><label>M</label></span>
+                    <span><label>T</label></span>
+                    <span><label>W</label></span>
+                    <span><label>T</label></span>
+                    <span><label>F</label></span>
+                    <span><label>S</label></span>
+                </div>
+                <div class="notify-bell">Illuminate</div>
+                <div class="notify-vibrate">Vibrate</div>
+                <input type="text" class="label" placeholder="Label" />
+            </div>
+        </div>
+
+        <div class="alarm-container">
+            <div class="alarm-item">
+                <div class="time">03:00</div>
+                <div class="meridiem">PM</div>
+                <div class="toggle">
+                    <label for="switch2" class="switch">
+                        <input type="checkbox" id="switch2">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="alarm-container">
+            <div class="alarm-item">
+                <div class="time">06:30</div>
+                <div class="meridiem">PM</div>
+                <div class="toggle">
+                    <label for="switch3" class="switch">
+                        <input type="checkbox" id="switch3">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="buttons">
+
+    </div>
+
+    <footer>
+        <h2>References</h2>
+        <ul class="reference-urls" id="reference-urls"></ul>
+    </footer>
+</div>
+<script type="text/javascript" src="src/js/add_references.js"></script>
+<script type="text/javascript">
+    window.load = loadReferences('/data/references/alarm-ui.json');
+</script>
+</body>
+</html>

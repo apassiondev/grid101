@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "easeIn": "1",
+      "id": "reference-urls",
+      "items": [
+        {
+          "text": "How To Create a Toggle Switch (Pure CSS) | W3School",
+          "url": "https://www.w3schools.com/howto/howto_css_switch.asp"
+        },
+        {
+          "text": "Box Alignment in CSS Grid Layout | MDN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Box_Alignment_in_CSS_Grid_Layout"
+        },
+        {
+          "text": "The differences between URL vs URI",
+          "url": "https://danielmiessler.com/study/url-uri/"
+        },
+        {
+          "text": "How to build a web form with CSS Grid | Envato Tuts+",
+          "url": "https://webdesign.tutsplus.com/tutorials/how-to-build-web-form-layouts-with-css-grid--cms-28776"
+        },
+        {
+          "text": "Switch buttons with pure CSS | Andreas Storm",
+          "url": "https://codepen.io/andreasstorm/pen/ZGjNwZ?editors=1100#0"
+        }
+      ]
+    }
+  ]
+}
